@@ -1,6 +1,5 @@
 package by.pasha.je.jdbc.entity;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -111,7 +110,7 @@ public class Flight {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Flight flight = (Flight) o;
-        return Objects.equals(id, flight.id) && Objects.equals(aircraft_id, flight.aircraft_id) && Objects.equals(arrival_airport_code, flight.arrival_airport_code) && Objects.equals(arrival_date, flight.arrival_date) && Objects.equals(departure_airport_code, flight.departure_airport_code) && Objects.equals(departure_date, flight.departure_date) && Objects.equals(flight_no, flight.flight_no) && Objects.equals(status, flight.status);
+        return Objects.equals(id, flight.id) && Objects.equals(aircraft_id, flight.aircraft_id) && Objects.equals(arrival_airport_code, flight.arrival_airport_code) && Objects.equals(arrival_date, flight.arrival_date) && Objects.equals(departure_airport_code, flight.departure_airport_code) && Objects.equals(departure_date, flight.departure_date) && Objects.equals(this.flight_no, flight.flight_no) && Objects.equals(status, flight.status);
     }
 
     @Override
